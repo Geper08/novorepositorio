@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> <!-- Adicione esta linha -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="imagens/favicon-240x240.png" type="image/x-icon">
+</head>
+
+
+<body class="bg-black text-gray-100 font-primary">
+
+
+
+    <nav class="w-full flex justify-between items-center py-3 px-4 fixed z-50">
+
+        <div class="w-11/12">
+            <a href="#" onclick="reloadPage()">
+                <img class="w-2/12" src="imagens/logo-png-removebg-preview.png">
+            </a>
+        </div>
+
+        <div class="w-6/12 flex flex-nowrap justify-end">
+
+            <div class="mr-2">
+
+                <a href="#about">
+                    <button class="bg-blue-400 text-white py-1 px-3 rounded-md">
+                        Sobre
+                    </button>
+                </a>
+
+                <a href="#features">
+                    <button class="bg-blue-400 text-white py-1 px-3 rounded-md">
+                        Projetos
+                    </button>
+                </a>
+
+                <a href="#contact">
+                    <button class="bg-blue-400 text-white py-1 px-3 rounded-md">
+                        Contato
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+    <header class="min-h-screen bg-black bg-opacity-75 bg-blend-overlay showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat relative">
+        <video autoplay muted loop class="w-full h-full object-cover" style="opacity: 0.4;">
+            <source src="static/images/futuristic_digital_data_processing_nano2 -100.mp4" type="video/mp4">
+            <!-- Adicione outros formatos de vídeo aqui para compatibilidade com navegadores diferentes -->
+            Seu navegador não suporta vídeos em HTML5.
+        </video>
+        <div class="z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center flex flex-col">
+            <h2 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center md:text-left md:text-justify">
+                Bem-vindo ao meu Portfólio!
+                <br><br>
+                Sou Fascinado pelo mundo dos Dados e Desenvolvimento Web.
+            </h2>
+            <br><br>
+            <h3 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center md:text-left md:text-justify text-yellow-500">
+                Portfólio em desenvolvimento...
+            </h3>
+        </div>
+    </header>
+    
+    
+    
+
+    <section id="about" class='flex flex-col md:flex-row items-center border-gray-900 border-b-8'
+        style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10 ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Sobre Mim
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Sou um Profissional com experiência em administrativo/financeiro e tecnologia, com foco na carreira de
+                Dados e Desenvolvimento web. Possuo habilidades em linguagens de programação, banco de dados, Machine
+                Learning, cloud computing e análise de dados.
+            </h5>
+            <button id="btnVisualizar"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Visualize a Imagem
+                clicando aqui!!!</button>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img id="imagemPerfil" src="imagens/imagem perfil 640x480.png" class="w-5/12 hidden" alt="">
+        </div>
+    </section>
+
+    <section id="features" class='flex flex-col md:flex-row items-center justify-center border-gray-900 border-b-8'
+        style="min-height: 70vh;">
+        <h2 class="md:text-5xl text-4xl font-semibold mb-8 mt-20 md:mt-0 text-center w-full">Projetos</h2>
+        <!-- restante do conteúdo do carrossel -->
+        <div id="carouselExampleControls" class="carousel slide p-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="title">Projeto em Python - Django</h3>
+                            <br>
+                            <p>Este é um projeto que desenvolvi como uma réplica da famosa plataforma de streaming
+                                Netflix, utilizando Python e o framework Django, juntamente com outras tecnologias
+                                como HTML, CSS e JavaScript. O site foi projetado para fornecer uma experiência de
+                                usuário semelhante à original, permitindo que os usuários naveguem pelos filmes e
+                                séries disponíveis, assistam aos trailers, verifiquem detalhes dos títulos, criem
+                                uma lista de favoritos e acessem suas contas pessoais. O site é responsivo e pode
+                                ser acessado em dispositivos móveis, tablets e desktops. Este projeto é ideal para
+                                aqueles que desejam aprimorar suas habilidades em desenvolvimento web e aprender a
+                                construir aplicativos interativos e atraentes. Sinta-se à vontade para explorar o
+                                código e personalizar o projeto de acordo com suas necessidades. Espero que
+                                aproveite!</p>
+                            <br>
+                            <p style="text-align: center;">Você pode acessar o projeto <strong> <a target="_blank"
+                                        href="https://projetogeperflixdjango-production.up.railway.app/">clicando
+                                        aqui</a>.</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-6 image-container">
+                            <img src="imagens/projeto-geperflix.PNG" class="d-block w-100 active-img neon-image"
+                                alt="Projeto 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="title">Projeto em PHP - Moodle</h3>
+                            <br>
+                            <p>Este é um projeto onde usa a plataforma Moodle. Nele é possível desenvolver sistemas de
+                                cursos, uma plataforma de cursos com a principal linguagem usada PHP. Neste projeto é
+                                possível a instalação, configuração e administração da plataforma, também foi integrado
+                                com o PostgreSQL.</p>
+                        </div>
+                        <div class="col-md-6 image-container">
+                            <img src="imagens/projeto - moodle 1900x960.png" class="d-block w-100 active-img neon-image"
+                                alt="Projeto 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="title">Projeto em PHP - Sistema Financeiro</h3>
+                            <br>
+                            <p>Este é um projeto que desenvolvi para realizar um controle financeiro simples,
+                                onde é possível realizar cadastros tanto de usuários quanto de contas pessoais ou do que
+                                quiser realizar o controle.
+                                Foi desenvolvido em PHP, JavaScript, além de HTML e CSS. Para integrar um banco de dados
+                                em SQL para salvar os dados de cada usuário</p>
+                        </div>
+                        <div class="col-md-6" id="imageContainer">
+                            <img src="imagens/projeto- sistema_financeiro - php - tela inicial 1900x960.png"
+                            class="d-block w-100 active-img neon-image" alt="Projeto 2">
+                            <img src="imagens/projeto- sistema_financeiro - php - BD - 1900x960.png"
+                            class="d-block w-100 active-img neon-image" alt="Projeto 2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Outros slides aqui -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class='flex flex-col md:flex-row items-center justify-center border-gray-900 border-b-8 py-8'
+        style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-0 mt-0">Contato</h2>
+            <div class="carousel slide w-100 mt-4" data-ride="carousel" id="carouselExampleControlsContact">
+                <div class="carousel slide w-100 mt-4" data-ride="carousel" id="carouselExampleControlsContact">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <!-- Coloque aqui o texto de descrição -->
+                                    <h2 class="title">ACESSE CLICANDO SOBRE O ÍCONE</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                    <!-- Link para o LinkedIn -->
+                                    <a href="https://www.linkedin.com/in/geovani-pereira-60661715a/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="imagens/icons8-linkedin-48.png" class="d-block w-100 h-auto mt-3"
+                                            style="max-width: 48px; max-height: 48px;" alt="Projeto 1">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <!-- Coloque aqui o texto de descrição -->
+                                    <h2 class="title">ACESSE CLICANDO SOBRE O ÍCONE</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                    <!-- Link para o GitHub -->
+                                    <a href="https://github.com/Geper08" target="_blank" rel="noopener noreferrer">
+                                        <img src="imagens/icons8-github-48.png" class="d-block w-100 h-auto mt-3"
+                                            style="max-width: 48px; max-height: 48px;" alt="Projeto 2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles do carrossel -->
+                    <a class="carousel-control-prev" href="#carouselExampleControlsContact" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControlsContact" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+
+    <footer id="contact" class=" px-5 py-10 ">
+        <ul class="flex justify-between items-center">
+            <li>&copy; Gepertech</li>
+            <li> Contato: geovani.m.per@gmail.com</li>
+            <li>2024</li>
+        </ul>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" class="btn btn-dark" title="Voltar ao Topo">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+        <span>Voltar ao Topo</span>
+    </button>
+
+
+    <script src="scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-+0MdXIHK8q9i0c0gldjHCp2i9TdQvveJ5K3qbd7FV5QTVy2l0aCJo3jzVwL0C2Hj"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

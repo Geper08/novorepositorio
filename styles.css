@@ -1,0 +1,120 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Botão "Voltar ao Topo" */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#myBtn ion-icon {
+    margin-right: 5px;
+}
+
+#myBtn:hover {
+    opacity: 0.7;
+}
+
+/* Estilos para alinhar o texto */
+.title {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/* Ajuste para exibir o título no centro */
+.carousel-item .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajuste para exibir a imagem no centro */
+.carousel-item .col-md-6 img {
+    margin: auto;
+    display: block;
+}
+
+/* Centralizar título "Projetos" na seção #features */
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#features h2 {
+    margin-top: 40px;
+    /* Ajuste o valor conforme necessário para afastar mais o título */
+}
+
+#features p {
+    text-align: justify;
+}
+
+/* Estilização CSS para a classe active-img */
+.active-img {
+    display: block;
+    border: 2px solid transparent;
+    /* Borda transparente inicial */
+    box-shadow: 0 0 10px #0056b3, 0 0 20px #0056b3, 0 0 30px #0056b3;
+    /* Sombras para o efeito neon */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    /* Transição suave para transformação e cor da borda */
+    border-radius: 8px;
+    /* Bordas levemente arredondadas */
+}
+
+/* Quando o mouse passa por cima, o efeito neon aumenta */
+.active-img:hover {
+    transform: scale(1.05);
+    /* Aumenta em 5% */
+    border-color: #0056b3;
+    /* Altera a cor da borda para a cor neon */
+}
+
+img {
+    display: none;
+}
+
+#imageContainer img.active-img {
+    display: block;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px #0056b3, 0 0 20px #0056b3, 0 0 30px #0056b3;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+#imageContainer img.active-img:hover {
+    transform: scale(1.05);
+    border-color: #0056b3;
+}
+
+.neon-image {
+    max-width: 80%; /* Define o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção */
+}
